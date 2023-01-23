@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: local("Roboto"), url(fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: local("Roboto-Bold"),
+    url(fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+.site {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  width: 100%;
+  padding-left: 2em;
+  padding-right: 2em;
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: #ebebeb;
+}
+
+.randomProducts {
+  width: 90vw;
+  margin: clamp(10px, 3vw, 4vw);
+  display: inline-flex;
+  justify-content: center;
+}
+
+.randomProductsElement {
+  padding: 1em;
+  margin: 2em;
+  border: 1px solid black;
+}
+
+.pagination {
+  display: inline-flex;
+}
+
+.paginationButton {
+  padding: 0.8em;
+  margin: 0.5em;
+  border: 1px solid black;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0.5em;
+}
+
+button {
+  font-family: "Roboto-Bold";
+  background-color: #ffffff;
+  margin: 0.5em;
+  padding: 0.8em;
+  border: none;
+  font-size: clamp(10px, 0.9vw, 16px);
+}
+
+button:hover {
+  cursor: pointer;
+}
+.buyButton {
+  background-color: red;
+}
+.zeroMargin {
+  margin: 0px;
+}
+
+.productMenu {
+  background-color: #fff1d6;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e22bc3;
+}
+
+.products {
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+  background-image: linear-gradient(
+    to right,
+    rgb(240, 240, 240) 0%,
+    rgb(255, 255, 255) 50%
+  );
+}
+
+.singlePreviewProduct {
+  border-bottom: 1px solid rgb(161, 161, 161);
+}
+
+.activePage {
+  background-color: #e22bc3;
+}
+
+.previewImage {
+  max-width: 20em;
+  max-height: 20em;
+  height: auto;
+}
+
+img {
+  height: 20vw;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 2em;
+}
+
+input {
+  background-color: #ffffff;
+  border: 1px solid black;
+  padding: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: clamp(16px, 2vw, 22px);
+}
+
+p {
+  font-size: clamp(12px, 1vw, 20px);
+}
+
+/* @media screen and (max-width: 720px) {
+} */
