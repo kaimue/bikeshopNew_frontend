@@ -47,12 +47,17 @@ const RandomProducts = () => {
       return (
         <div className="randomProducts">
           {products.map((product) => (
-            <div>
+            <div className="productLink">
               <Link to={product._id} style={{ backgroundColor: "#f7f7f7" }}>
                 <div className="randomProductsElement">
-                  <h2>{product.title}</h2>
-                  <img src={product.imgUrl} alt={product.title} />
-                  <p>{product.price} €</p>
+                  <div className="productDescription">
+                    <h2>{product.title}</h2>
+                    <img src={product.imgUrl} alt={product.title} />
+                    <p>{product.price} €</p>
+                  </div>
+                  <p className="productDescriptionHide">
+                    {product.description}
+                  </p>
                 </div>
               </Link>
             </div>

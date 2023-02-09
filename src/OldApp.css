@@ -2,30 +2,29 @@
   font-family: "Roboto-Regular";
   src: local("Roboto"), url(fonts/Roboto/Roboto-Regular.ttf) format("truetype");
 }
+
 @font-face {
   font-family: "Roboto-Bold";
-  src: local("Roboto-Bold"), url(fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+  src: local("Roboto-Bold"),
+    url(fonts/Roboto/Roboto-Bold.ttf) format("truetype");
 }
+
 * {
   box-sizing: border-box;
   font-family: "Roboto-Regular", sans-serif;
   text-decoration: none;
-  font-display: swap;
 }
 
-a,
-a:link,
-a:visited {
+a {
   text-decoration: none;
-  color: black;
 }
 
-.productDescriptionHide {
+.productDescription {
   display: none;
 }
 
-.productDescription:hover + .productDescriptionHide {
-  display: inline-flex;
+.productDescription:hover {
+  width: 100vw;
 }
 
 a:hover {
@@ -82,7 +81,7 @@ a:hover {
 }
 
 button {
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "Roboto-Bold";
   background-color: #ffffff;
   margin: 0.5em;
   padding: 0.8em;
@@ -93,11 +92,9 @@ button {
 button:hover {
   cursor: pointer;
 }
-
 .buyButton {
   background-color: red;
 }
-
 .zeroMargin {
   margin: 0px;
 }
@@ -112,7 +109,11 @@ button:hover {
   margin-top: 1em;
   margin-bottom: 1em;
   padding: 1em;
-  background-image: linear-gradient(to right, rgb(240, 240, 240) 0%, rgb(255, 255, 255) 50%);
+  background-image: linear-gradient(
+    to right,
+    rgb(240, 240, 240) 0%,
+    rgb(255, 255, 255) 50%
+  );
 }
 
 .singlePreviewProduct {
@@ -157,4 +158,5 @@ p {
   font-size: clamp(12px, 1vw, 20px);
 }
 
-/*# sourceMappingURL=App.css.map */
+/* @media screen and (max-width: 720px) {
+} */
